@@ -1,9 +1,13 @@
 x=open("sumdata.txt","a")
-a=[]
+b=[]
 for i in range(5):
-    b=int(input("Enter the number:"))
-    a.append(b)
-print("The numbers are: ",a)
-print("The numbers are ",a,file=x)
-print("sum of numbers: ",sum(a))
-print("sum of numbers: ",sum(a),file=x)
+    a=int(input("enter  a number: "))
+    if a>0:
+        b.append(a)
+    else:
+        break
+if len(b)==5:
+    print(b)
+    print(sum(b))
+else:
+    print("please enter all positive numbers as input")
